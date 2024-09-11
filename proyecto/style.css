@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3bb965;
+    padding: 20px;
+    text-align: center; /* Centra el contenido del header */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos li a la derecha */
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 50%; /* La imagen no superará el 80% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    margin: 40px auto; /* Márgenes superior e inferior de 20px y márgenes izquierdo y derecho automáticos para centrar */
+    display: block;
+}
