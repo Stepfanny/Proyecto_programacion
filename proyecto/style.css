@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #3bb965;
+    background-color: #85b876;
     padding: 20px;
     text-align: center; /* Centra el contenido del header */
 }
@@ -15,16 +15,25 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Alinea los elementos li a la derecha */
+    justify-content: flex-end; /* Centra los elementos li */
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0 10px; /* Espaciado entre los botones */
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
+    display: inline-block; /* Permite aplicar padding y background */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #45a049; /* Color del botón al pasar el ratón */
 }
 
 img {
@@ -33,3 +42,4 @@ img {
     margin: 40px auto; /* Márgenes superior e inferior de 20px y márgenes izquierdo y derecho automáticos para centrar */
     display: block;
 }
+

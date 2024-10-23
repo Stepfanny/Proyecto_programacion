@@ -1,0 +1,86 @@
+body {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    background: linear-gradient(150deg, #6C3483, #58d683); /*     background: linear-gradient(150deg, #6C3483, #58d683); */
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 20px 0;
+    background: linear-gradient(150deg, #ffffff, #ffffff); /* Gradiente verde natural */
+    padding: 20px; /* Espacio interior alrededor de la galería */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+
+header {
+    background-color: #6bb684;
+    padding: 5px;
+    text-align: center; /* Centra el contenido del header */
+        
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Centra los elementos li */
+}
+
+nav li {
+    margin: 0 10px; /* Espaciado entre los botones */
+}
+
+nav a {
+    display: inline-block; /* Permite aplicar padding y background */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #45a049; /* Color del botón al pasar el ratón */
+}
+
+main {
+    background-color: #6bb684; /* Cambia aquí el color que prefieras */
+    padding: 10px; /* Espacio interior */
+     
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Centra el contenido del main */
+    margin-bottom: 20px; /* Agrega un margen inferior */
+}
+
+.imagen-con-texto {
+    width: 200px; /* Ajusta el ancho de cada imagen con su texto */
+    text-align: center; /* Centrar el texto debajo de cada imagen */
+}
+
+.imagen-con-texto img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: 200px;
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-con-texto:hover img {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+}
+
+.descripcion {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 14px;
+    color: #333;
+}
+
+.descripcion h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #228B22;
